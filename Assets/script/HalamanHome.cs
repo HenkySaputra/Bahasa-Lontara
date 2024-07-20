@@ -30,6 +30,18 @@ public class HalamanHome : MonoBehaviour
         SceneManager.LoadScene("HalamanBelajar");
     }
 
+     public void TombolDaftarHuruf(){
+        SceneManager.LoadScene("HalamanDaftarHuruf");
+    }
+
+     public void TombolTandaBaca(){
+        SceneManager.LoadScene("HalamanTandaBaca");
+    }
+
+    public void TombolKataPengucapan(){
+        SceneManager.LoadScene("HalamanKatadanPengucapan");
+    }
+
     public void TombolKembali(){
         SceneManager.LoadScene("HalamanHome");
     }
@@ -44,14 +56,6 @@ public class HalamanHome : MonoBehaviour
 
     public void TombolKembaliDaftarHuruf(){
         SceneManager.LoadScene("HalamanDaftarHuruf");
-    }
-
-    public void TombolDaftarHuruf(){
-        SceneManager.LoadScene("HalamanDaftarHuruf");
-    }
-
-     public void TombolTandaBaca(){
-        SceneManager.LoadScene("HalamanTandaBaca");
     }
 
 }
