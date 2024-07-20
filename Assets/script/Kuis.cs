@@ -11,8 +11,8 @@ public class Kuis : MonoBehaviour
     private const int c = 1013904223;
     private const int m = int.MaxValue;
     private int seed;
-    public Button myButton;
-    public Image myButtonImage;
+    public Button button;
+    public Image questionImage;
     private string[] imageNames = { "Kuis/ho", "Kuis/i", "Kuis/nge" };
     private int currentIndex = 0;
 
@@ -22,7 +22,7 @@ public class Kuis : MonoBehaviour
 
         ShuffleImages();
         SetImage();
-        myButton.onClick.AddListener(ChangeImage);
+        button.onClick.AddListener(ChangeImage);
     }
 
     void SetImage()
@@ -32,7 +32,7 @@ public class Kuis : MonoBehaviour
 
         if (newSprite != null)
         {
-            myButtonImage.sprite = newSprite;
+            questionImage.sprite = newSprite;
         }
         else
         {
