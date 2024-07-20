@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Belajar/HalamanTandaBaca.unity
     guid: 957764cd228acfd4ab28ae168bef687c
+  - enabled: 1
+    path: Assets/Scenes/Home/HalamanKuis1.unity
+    guid: 20486ddc1438c6c40b804a574d32bf86
+  - enabled: 1
+    path: Assets/Scenes/Home/HalamanKuis2.unity
+    guid: fd4ec11ed336d974390808ada4d8831c
   m_configObjects: {}
