@@ -2,62 +2,62 @@
 [
   {
     "question": "Soal-1",
-    "answer": false
+    "answer": 0
   },
   {
     "question": "Soal-2",
-    "answer": false
+    "answer": 0
   },
   {
     "question": "Soal-3",
-    "answer": true
+    "answer": 1
   },
   {
     "question": "Soal-4",
-    "answer": true
+    "answer": 1
   },
   {
     "question": "Soal-5",
-    "answer": false
+    "answer": 0
   },
   {
     "question": "Soal-6",
-    "answer": false
+    "answer": 0
   },
   {
     "question": "Soal-7",
-    "answer": false
+    "answer": 0
   },
   {
     "question": "Soal-8",
-    "answer": true
+    "answer": 1
   },
   {
     "question": "Soal-9",
-    "answer": false
+    "answer": 0
   },
   {
     "question": "Soal-10",
-    "answer": false
+    "answer": 0
   },
   {
     "question": "Soal-11",
-    "answer": true
+    "answer": 1
   },
   {
     "question": "Soal-12",
-    "answer": false
+    "answer": 0
   },
   {
     "question": "Soal-13",
-    "answer": true
+    "answer": 1
   },
   {
     "question": "Soal-14",
-    "answer": false
+    "answer": 0
   },
   {
     "question": "Soal-15",
-    "answer": true
+    "answer": 1
   }
 ]
