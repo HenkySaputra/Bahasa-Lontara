@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: b67a94557f9efc24c81675dc826e08df
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Aerospace Outline
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 647e2dcd488037343b0c2cf6ba836950, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Belajar/HalamanTandaBaca.unity
     guid: 957764cd228acfd4ab28ae168bef687c
   - enabled: 1
-    path: Assets/Scenes/Home/HalamanKuis.unity
+    path: Assets/Scenes/Bermain/HalamanSkorKuis.unity
     guid: 20486ddc1438c6c40b804a574d32bf86
   - enabled: 1
     path: Assets/Scenes/Belajar/HalamanKatadanPengucapan.unity

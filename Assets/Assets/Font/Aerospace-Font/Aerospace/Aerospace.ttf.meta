@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3c867c7156ee5cc458baadfa620e485a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Aerospace
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 954033d6dd5382c4bb220a5222a4819f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
