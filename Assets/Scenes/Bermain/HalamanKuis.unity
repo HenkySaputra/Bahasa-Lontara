@@ -320,7 +320,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tombolBenar: {fileID: 1546769399}
+  tombolSalah: {fileID: 1828350136}
   soalAktif: {fileID: 330154002}
+  suaraBenar: {fileID: 1735720841}
+  suaraSalah: {fileID: 1960695728}
 --- !u!1 &253655425
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,9 +736,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1735720841}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SuaraKuis, Assembly-CSharp
-        m_MethodName: mainkan
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1077,9 +1080,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1960695728}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SuaraKuis, Assembly-CSharp
-        m_MethodName: mainkan
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

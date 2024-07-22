@@ -7,7 +7,10 @@ using UnityEngine.UI;
 public class Kuis : MonoBehaviour
 {
     public Button tombolBenar;
+    public Button tombolSalah;
     public Image soalAktif;
+    public SuaraKuis suaraBenar;
+    public SuaraKuis suaraSalah;
     private SoalBenarSalah[] listSoal;
     private int indeksSoalAktif = 0;
 
@@ -18,11 +21,12 @@ public class Kuis : MonoBehaviour
         GeneratorSoal generator = new GeneratorSoal(lokasiSoal);
         listSoal = generator.GetSoalAcak();
 
-        SetImage();
-        tombolBenar.onClick.AddListener(ChangeImage);
+        GantiSoal();
+        tombolBenar.onClick.AddListener(JawabBenar);
+        tombolSalah.onClick.AddListener(JawabSalah);
     }
 
-    void SetImage()
+    void GantiSoal()
     {
         SoalBenarSalah soal = listSoal[indeksSoalAktif];
         Sprite newSprite = Resources.Load<Sprite>("Kuis/" + soal.pertanyaan);
@@ -36,14 +40,35 @@ public class Kuis : MonoBehaviour
             Debug.Log("Failed to load image: " + soal.pertanyaan);
         }
 
-         indeksSoalAktif++;
+        indeksSoalAktif++;
     }
 
-    void ChangeImage()
+    void JawabBenar()
+    {
+        PeriksaJawaban(1);
+    }
+
+    void JawabSalah()
+    {
+        PeriksaJawaban(0);
+    }
+
+    void PeriksaJawaban(int jawaban)
     {
         if (indeksSoalAktif < listSoal.Length)
         {
-            SetImage();
+            SoalBenarSalah soal = listSoal[indeksSoalAktif];
+
+            if (soal.jawaban == jawaban)
+            {
+                suaraBenar.mainkan();
+            }
+            else
+            {
+                suaraSalah.mainkan();
+            }
+
+            GantiSoal();
         }
     }
 }
