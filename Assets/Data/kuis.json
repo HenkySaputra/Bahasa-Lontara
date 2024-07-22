@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "Soal-1",
+    "jawaban": 0
+  },
+  {
+    "id": 2,
+    "pertanyaan": "Soal-2",
+    "jawaban": 0
+  },
+  {
+    "id": 3,
+    "pertanyaan": "Soal-3",
+    "jawaban": 1
+  },
+  {
+    "id": 4,
+    "pertanyaan": "Soal-4",
+    "jawaban": 1
+  },
+  {
+    "id": 5,
+    "pertanyaan": "Soal-5",
+    "jawaban": 0
+  },
+  {
+    "id": 6,
+    "pertanyaan": "Soal-6",
+    "jawaban": 0
+  },
+  {
+    "id": 7,
+    "pertanyaan": "Soal-7",
+    "jawaban": 0
+  },
+  {
+    "id": 8,
+    "pertanyaan": "Soal-8",
+    "jawaban": 1
+  },
+  {
+    "id": 9,
+    "pertanyaan": "Soal-9",
+    "jawaban": 0
+  },
+  {
+    "id": 10,
+    "pertanyaan": "Soal-10",
+    "jawaban": 0
+  },
+  {
+    "id": 11,
+    "pertanyaan": "Soal-11",
+    "jawaban": 1
+  },
+  {
+    "id": 12,
+    "pertanyaan": "Soal-12",
+    "jawaban": 0
+  },
+  {
+    "id": 13,
+    "pertanyaan": "Soal-13",
+    "jawaban": 1
+  },
+  {
+    "id": 14,
+    "pertanyaan": "Soal-14",
+    "jawaban": 0
+  },
+  {
+    "id": 15,
+    "pertanyaan": "Soal-15",
+    "jawaban": 1
+  }
+] 

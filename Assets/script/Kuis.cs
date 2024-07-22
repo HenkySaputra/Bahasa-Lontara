@@ -1,3 +1,4 @@
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -65,6 +66,16 @@ public class Kuis : MonoBehaviour
         if (currentIndex < imageNames.Length)
         {
             SetImage();
+        }
+
+        string filePath = Path.Combine(Application.dataPath, "Data/kuis.json");
+
+        GeneratorSoal generator = new GeneratorSoal(filePath);
+        SoalBenarSalah[] randomizedQuestions = generator.GetSoalAcak();
+
+        foreach (var question in randomizedQuestions)
+        {
+            Debug.Log($"pertanyaan: {question.pertanyaan}");
         }
     }
 }
