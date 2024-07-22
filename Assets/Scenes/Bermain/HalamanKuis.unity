@@ -324,6 +324,7 @@ MonoBehaviour:
   soalAktif: {fileID: 330154002}
   suaraBenar: {fileID: 1735720841}
   suaraSalah: {fileID: 1960695728}
+  textSkor: {fileID: 1946414455}
 --- !u!1 &253655425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,7 +1202,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100
+  m_Text: 0
 --- !u!222 &1946414456
 CanvasRenderer:
   m_ObjectHideFlags: 0
