@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Kuis : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Kuis : MonoBehaviour
     public SuaraKuis suaraSalah;
     public Text textSkor;
     private SoalBenarSalah[] listSoal;
+    private SoalBenarSalah soal;
     private int indeksSoalAktif = 0;
     private int skor = 0;
     private int skorJawabBenar = 10;
@@ -31,7 +33,13 @@ public class Kuis : MonoBehaviour
 
     void GantiSoal()
     {
-        SoalBenarSalah soal = listSoal[indeksSoalAktif];
+        if (indeksSoalAktif >= listSoal.Length)
+        {
+            Selesai();
+            return;
+        }
+
+        soal = listSoal[indeksSoalAktif];
         Sprite newSprite = Resources.Load<Sprite>("Kuis/" + soal.pertanyaan);
 
         if (newSprite != null)
@@ -42,8 +50,6 @@ public class Kuis : MonoBehaviour
         {
             Debug.Log("Failed to load image: " + soal.pertanyaan);
         }
-
-        indeksSoalAktif++;
     }
 
     void JawabBenar()
@@ -58,22 +64,23 @@ public class Kuis : MonoBehaviour
 
     void PeriksaJawaban(int jawaban)
     {
-        if (indeksSoalAktif < listSoal.Length)
+        if (soal.jawaban == jawaban)
         {
-            SoalBenarSalah soal = listSoal[indeksSoalAktif];
-
-            if (soal.jawaban == jawaban)
-            {
-                suaraBenar.mainkan();
-                skor += skorJawabBenar;
-            }
-            else
-            {
-                suaraSalah.mainkan();
-            }
-
+            suaraBenar.mainkan();
+            skor += skorJawabBenar;
             textSkor.text = skor.ToString();
-            GantiSoal();
         }
+        else
+        {
+            suaraSalah.mainkan();
+        }
+
+        indeksSoalAktif++;
+        GantiSoal();
+    }
+
+    public void Selesai()
+    {
+        SceneManager.LoadScene("HalamanSkorKuis");
     }
 }
