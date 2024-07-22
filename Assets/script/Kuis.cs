@@ -16,7 +16,6 @@ public class Kuis : MonoBehaviour
     private SoalBenarSalah[] listSoal;
     private SoalBenarSalah soal;
     private int indeksSoalAktif = 0;
-    private int skor = 0;
     private int skorJawabBenar = 10;
 
     void Start()
@@ -67,8 +66,8 @@ public class Kuis : MonoBehaviour
         if (soal.jawaban == jawaban)
         {
             suaraBenar.mainkan();
-            skor += skorJawabBenar;
-            textSkor.text = skor.ToString();
+            Skor.instance.totalSkor += skorJawabBenar;
+            textSkor.text = Skor.instance.totalSkor.ToString();
         }
         else
         {
