@@ -11,8 +11,11 @@ public class Kuis : MonoBehaviour
     public Image soalAktif;
     public SuaraKuis suaraBenar;
     public SuaraKuis suaraSalah;
+    public Text textSkor;
     private SoalBenarSalah[] listSoal;
     private int indeksSoalAktif = 0;
+    private int skor = 0;
+    private int skorJawabBenar = 10;
 
     void Start()
     {
@@ -62,12 +65,14 @@ public class Kuis : MonoBehaviour
             if (soal.jawaban == jawaban)
             {
                 suaraBenar.mainkan();
+                skor += skorJawabBenar;
             }
             else
             {
                 suaraSalah.mainkan();
             }
 
+            textSkor.text = skor.ToString();
             GantiSoal();
         }
     }
