@@ -14,6 +14,14 @@ public class HalamanHome : MonoBehaviour
         SceneManager.LoadScene("HalamanHome");
     }
 
+    public void TombolBermain(){
+        SceneManager.LoadScene("HalamanBermain");
+    }
+
+    public void TombolBelajar(){
+        SceneManager.LoadScene("HalamanBelajar");
+    }
+
     public void TombolSejarah(){
         SceneManager.LoadScene("HalamanSejarah");
     }
@@ -24,10 +32,6 @@ public class HalamanHome : MonoBehaviour
 
     public void TombolTentang(){
         SceneManager.LoadScene("HalamanTentang");
-    }
-
-    public void TombolBelajar(){
-        SceneManager.LoadScene("HalamanBelajar");
     }
 
      public void TombolDaftarHuruf(){

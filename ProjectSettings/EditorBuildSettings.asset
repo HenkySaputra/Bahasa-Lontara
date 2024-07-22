@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Belajar/HalamanKatadanPengucapan.unity
     guid: 283186e5b4385d54b9c27f9086ff5c6e
+  - enabled: 1
+    path: Assets/Scenes/Home/HalamanBermain.unity
+    guid: 260b99d8d621852478cdb87b2312637a
+  - enabled: 1
+    path: Assets/Scenes/Bermain/HalamanKuis.unity
+    guid: 1d73a3baac84500479a87e3d31c61a4a
   m_configObjects: {}
