@@ -9,8 +9,8 @@ public class HalamanBermain : MonoBehaviour
         SceneManager.LoadScene("HalamanKuis");
     }
 
-    public void TombolKataPengucapan(){
-        SceneManager.LoadScene("HalamanKata");
+    public void TombolLengkapiKata(){
+        SceneManager.LoadScene("HalamanLengkapiKata");
     }
 
     public void TombolKembali(){

@@ -34,6 +34,10 @@ public class HalamanHome : MonoBehaviour
         SceneManager.LoadScene("HalamanTentang");
     }
 
+    public void TombolSkor(){
+        SceneManager.LoadScene("HalamanSkor");
+    }
+
      public void TombolDaftarHuruf(){
         SceneManager.LoadScene("HalamanDaftarHuruf");
     }
