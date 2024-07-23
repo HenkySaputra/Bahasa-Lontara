@@ -462,7 +462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.67743593, y: 0.09177531}
   m_AnchorMax: {x: 0.9192821, y: 0.5}
-  m_AnchoredPosition: {x: -0.63319397, y: -2.0950012}
+  m_AnchoredPosition: {x: -0.6331787, y: -2.0950012}
   m_SizeDelta: {x: 1.2662048, y: 4.184}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602532155
@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 730906373}
   - component: {fileID: 730906372}
   m_Layer: 5
-  m_Name: kotak histori (4)
+  m_Name: kotak riwayat (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 968202382}
   - component: {fileID: 968202381}
   m_Layer: 5
-  m_Name: kotak histori (3)
+  m_Name: kotak riwayat (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -919,7 +919,7 @@ GameObject:
   - component: {fileID: 1084742036}
   - component: {fileID: 1084742035}
   m_Layer: 5
-  m_Name: kotak histori (2)
+  m_Name: kotak riwayat (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -995,7 +995,7 @@ GameObject:
   - component: {fileID: 1093914334}
   - component: {fileID: 1093914333}
   m_Layer: 5
-  m_Name: kotak histori (8)
+  m_Name: kotak riwayat (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1403,7 +1403,7 @@ GameObject:
   - component: {fileID: 1300998728}
   - component: {fileID: 1300998727}
   m_Layer: 5
-  m_Name: kotak histori (9)
+  m_Name: kotak riwayat (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1477,7 +1477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1306169480}
   m_Layer: 5
-  m_Name: isi histori
+  m_Name: isi riwayat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1524,7 +1524,7 @@ GameObject:
   - component: {fileID: 1436087809}
   - component: {fileID: 1436087808}
   m_Layer: 5
-  m_Name: kotak histori (7)
+  m_Name: kotak riwayat (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1800,7 +1800,7 @@ GameObject:
   - component: {fileID: 1671187292}
   - component: {fileID: 1671187291}
   m_Layer: 5
-  m_Name: kotak histori (1)
+  m_Name: kotak riwayat (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1881,7 +1881,7 @@ GameObject:
   - component: {fileID: 1690547476}
   - component: {fileID: 1690547475}
   m_Layer: 5
-  m_Name: kotak histori (6)
+  m_Name: kotak riwayat (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1957,7 +1957,7 @@ GameObject:
   - component: {fileID: 1946870353}
   - component: {fileID: 1946870352}
   m_Layer: 5
-  m_Name: kotak histori (5)
+  m_Name: kotak riwayat (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
