@@ -1,8 +1,10 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
+using UnityEngine;
 
 public class GeneratorSoal
 {
@@ -14,7 +16,8 @@ public class GeneratorSoal
 
     public GeneratorSoal(string lokasiSoal)
     {
-        string json = File.ReadAllText(lokasiSoal);
+        TextAsset textAssetJson = Resources.Load<TextAsset>("Data/kuis");
+        string json = textAssetJson.text;
         listSoal = JsonConvert.DeserializeObject<List<SoalBenarSalah>>(json);
         m = listSoal.Count;
     }
@@ -26,7 +29,7 @@ public class GeneratorSoal
 
     private int GetX0()
     {
-        Random random = new Random();
+        System.Random random = new System.Random();
         return random.Next(0, 100);
     }
 
