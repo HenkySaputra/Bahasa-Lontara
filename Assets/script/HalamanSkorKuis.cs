@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Newtonsoft.Json;
 
 public class HalamanSkorKuis : MonoBehaviour
 { 
@@ -15,14 +17,15 @@ public class HalamanSkorKuis : MonoBehaviour
         totalSkor.text = Skor.instance.totalSkor.ToString();
         buttonhome.onClick.AddListener(TombolKembaliHome);
         buttonmain.onClick.AddListener(TombolKembaliMain);
-
     }
 
-     public void TombolKembaliHome(){
+    public void TombolKembaliHome(){
+        Skor.instance.ResetSkor();
         SceneManager.LoadScene("HalamanHome");
     }
 
     public void TombolKembaliMain(){
+        Skor.instance.ResetSkor();
         SceneManager.LoadScene("HalamanKuis");
     }
 }

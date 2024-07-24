@@ -18,7 +18,7 @@ public class Skor : MonoBehaviour
         }
     }
 
-    public void ResetScore()
+    public void ResetSkor()
     {
         totalSkor = 0;
     }
