@@ -1,4 +1,4 @@
-public class SoalBenarSalah
+public class Soal
 {
     public int id { get; set; }
     public string pertanyaan { get; set; }

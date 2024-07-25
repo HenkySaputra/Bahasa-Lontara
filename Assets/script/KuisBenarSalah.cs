@@ -13,8 +13,8 @@ public class KuisBenarSalah : MonoBehaviour
     public SuaraKuis suaraBenar;
     public SuaraKuis suaraSalah;
     public Text textSkor;
-    private SoalBenarSalah[] listSoal;
-    private SoalBenarSalah soal;
+    private Soal[] listSoal;
+    private Soal soal;
     private int indeksSoalAktif = 0;
     private int skorJawabBenar = 10;
 

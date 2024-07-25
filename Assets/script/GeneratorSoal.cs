@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class GeneratorSoal
 {
-    private List<SoalBenarSalah> listSoal;
+    private List<Soal> listSoal;
     private int a = 11;
     private int c = 7;
     private int m;
@@ -16,7 +16,7 @@ public class GeneratorSoal
 
     public GeneratorSoal(TextAsset dataKuis)
     {
-        listSoal = JsonConvert.DeserializeObject<List<SoalBenarSalah>>(dataKuis.text);
+        listSoal = JsonConvert.DeserializeObject<List<Soal>>(dataKuis.text);
         m = listSoal.Count;
     }
 
@@ -31,7 +31,7 @@ public class GeneratorSoal
         return random.Next(0, 100);
     }
 
-    public SoalBenarSalah[] GetSoalAcak()
+    public Soal[] GetSoalAcak()
     {
         List<int> listIndexSoal = Enumerable.Range(0, listSoal.Count).ToList();
 
@@ -45,7 +45,7 @@ public class GeneratorSoal
             listIndexSoal[xn] = temp;
         }
 
-        SoalBenarSalah[] listSoalAcak = new SoalBenarSalah[jumlahSoalAktif];
+        Soal[] listSoalAcak = new Soal[jumlahSoalAktif];
 
         for (int i = 0; i < jumlahSoalAktif; i++)
         {
