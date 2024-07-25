@@ -20,7 +20,7 @@ public class KuisBenarSalah : MonoBehaviour
 
     void Start()
     {
-        string lokasiSoal = Path.Combine(Application.dataPath, "Data/kuis.json");
+        string lokasiSoal = Path.Combine(Application.dataPath, "Data/KuisBenarSalah.json");
 
         GeneratorSoal generator = new GeneratorSoal(lokasiSoal);
         listSoal = generator.GetSoalAcak();
