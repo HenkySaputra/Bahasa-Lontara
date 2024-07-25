@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bermain/HalamanLengkapiKata.unity
     guid: 665fd8164721a9545959cf212c2228e8
+  - enabled: 1
+    path: Assets/Scenes/Bermain/HalamanSkorLengkapiKata.unity
+    guid: 0cbd7bab410dc3e42a729ff518f349f4
   m_configObjects: {}
