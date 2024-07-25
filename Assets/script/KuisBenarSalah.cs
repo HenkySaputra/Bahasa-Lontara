@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Kuis : MonoBehaviour
+public class KuisBenarSalah : MonoBehaviour
 {
     public Button tombolBenar;
     public Button tombolSalah;
