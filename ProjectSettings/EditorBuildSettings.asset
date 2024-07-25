@@ -16,10 +16,7 @@ EditorBuildSettings:
     guid: 9e58979da738832439af502b19a59f68
   - enabled: 1
     path: Assets/Scenes/Home/HalamanSejarah.unity
-    guid: 47d56294c2e43fc4bb00169a302e03c5
-  - enabled: 1
-    path: Assets/Scenes/Home/HalamanSejarah2.unity
-    guid: 825463ffce42e62429c47d94e5737997
+    guid: a08727d8cb662c64ca9a5d74c0a7405e
   - enabled: 1
     path: Assets/Scenes/Belajar/HalamanDaftarHuruf.unity
     guid: 3dc940e95a22c09489e64f370775b093
