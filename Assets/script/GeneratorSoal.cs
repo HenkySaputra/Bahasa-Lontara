@@ -14,11 +14,9 @@ public class GeneratorSoal
     private int m;
     private int jumlahSoalAktif = 10;
 
-    public GeneratorSoal(string lokasiSoal)
+    public GeneratorSoal(TextAsset dataKuis)
     {
-        TextAsset textAssetJson = Resources.Load<TextAsset>("Data/kuis");
-        string json = textAssetJson.text;
-        listSoal = JsonConvert.DeserializeObject<List<SoalBenarSalah>>(json);
+        listSoal = JsonConvert.DeserializeObject<List<SoalBenarSalah>>(dataKuis.text);
         m = listSoal.Count;
     }
 
