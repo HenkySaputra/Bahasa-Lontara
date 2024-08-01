@@ -13,10 +13,14 @@ public class KuisBenarSalah : MonoBehaviour
     public SuaraKuis suaraBenar;
     public SuaraKuis suaraSalah;
     public Text textSkor;
+    public Text textWaktu;
     private Soal[] listSoal;
     private Soal soal;
     private int indeksSoalAktif = 0;
     private int skorJawabBenar = 10;
+    private float waktuMulai;
+    private bool kuisBerjalan = false;
+
 
     void Start()
     {
@@ -25,9 +29,25 @@ public class KuisBenarSalah : MonoBehaviour
         GeneratorSoal generator = new GeneratorSoal(dataKuis);
         listSoal = generator.GetSoalAcak();
 
+        // Jalankan waktu
+        waktuMulai = Time.time;
+        kuisBerjalan = true;
+
         GantiSoal();
         tombolBenar.onClick.AddListener(JawabBenar);
         tombolSalah.onClick.AddListener(JawabSalah);
+    }
+
+    void Update()
+    {
+        if (kuisBerjalan)
+        {
+            float selisihWaktu = Time.time - waktuMulai;
+            string menit = Mathf.Floor(selisihWaktu / 60).ToString("00");
+            string detik = (selisihWaktu % 60).ToString("00");
+
+            textWaktu.text = menit + ":" + detik;
+        }
     }
 
     void GantiSoal()
@@ -80,7 +100,8 @@ public class KuisBenarSalah : MonoBehaviour
 
     public void Selesai()
     {
-        ManagerRiwayat.SimpanSkor("Kuis Salah Benar", "test");
+        kuisBerjalan = false;
+        ManagerRiwayat.SimpanSkor("Kuis Salah Benar", textWaktu.text);
         SceneManager.LoadScene("HalamanSkorKuis");
     }
 }

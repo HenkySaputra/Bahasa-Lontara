@@ -326,6 +326,7 @@ MonoBehaviour:
   suaraBenar: {fileID: 1735720841}
   suaraSalah: {fileID: 1960695728}
   textSkor: {fileID: 1946414455}
+  textWaktu: {fileID: 1001612000}
 --- !u!1 &253655425
 GameObject:
   m_ObjectHideFlags: 0
