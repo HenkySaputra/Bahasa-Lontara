@@ -80,7 +80,7 @@ public class KuisBenarSalah : MonoBehaviour
 
     public void Selesai()
     {
-        ManagerRiwayat.SimpanSkor("Kuis Salah Benar");
+        ManagerRiwayat.SimpanSkor("Kuis Salah Benar", "test");
         SceneManager.LoadScene("HalamanSkorKuis");
     }
 }

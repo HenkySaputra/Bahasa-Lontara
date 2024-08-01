@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 public class ManagerRiwayat
 {
 
-    public static void SimpanSkor(string kategori)
+    public static void SimpanSkor(string kategori, string waktu)
     {
         List<Riwayat> listRiwayat;
         string lokasiFile = Path.Combine(Application.persistentDataPath, "riwayat.json");
@@ -27,7 +27,8 @@ public class ManagerRiwayat
         Riwayat newRiwayat = new Riwayat             
         {
             skor = Skor.instance.totalSkor,
-            kategori = kategori
+            kategori = kategori,
+            waktu = waktu
         };
 
         listRiwayat.Insert(0, newRiwayat);

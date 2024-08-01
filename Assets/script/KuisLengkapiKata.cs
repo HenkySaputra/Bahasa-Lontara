@@ -15,6 +15,7 @@ public class KuisLengkapiKata : MonoBehaviour
     public SuaraKuis suaraBenar;
     public SuaraKuis suaraSalah;
     public Text textSkor;
+    public Text textWaktu;
     private Soal[] listSoal;
     private Soal soal;
     private int indeksSoalAktif = 0;
@@ -25,6 +26,9 @@ public class KuisLengkapiKata : MonoBehaviour
     private Opsi buttonBValue;
     private Opsi buttonCValue;
     private Opsi buttonDValue;
+    private float waktuMulai;
+    private bool kuisBerjalan = false;
+
 
     void Start()
     {
@@ -37,10 +41,26 @@ public class KuisLengkapiKata : MonoBehaviour
 
         GantiSoal();
 
+        // Jalankan waktu
+        waktuMulai = Time.time;
+        kuisBerjalan = true;
+
         tombolA.onClick.AddListener(JawabA);
         tombolB.onClick.AddListener(JawabB);
         tombolC.onClick.AddListener(JawabC);
         tombolD.onClick.AddListener(JawabD);
+    }
+
+    void Update()
+    {
+        if (kuisBerjalan)
+        {
+            float selisihWaktu = Time.time - waktuMulai;
+            string menit = Mathf.Floor(selisihWaktu / 60).ToString("00");
+            string detik = (selisihWaktu % 60).ToString("00");
+
+            textWaktu.text = menit + ":" + detik;
+        }
     }
 
     void GantiSoal()
@@ -115,7 +135,8 @@ public class KuisLengkapiKata : MonoBehaviour
 
     public void Selesai()
     {
-        ManagerRiwayat.SimpanSkor("Kuis Lengkapi Kata");
+        kuisBerjalan = false;
+        ManagerRiwayat.SimpanSkor("Kuis Lengkapi Kata", textWaktu.text);
         SceneManager.LoadScene("HalamanSkorLengkapiKata");
     }
 }
