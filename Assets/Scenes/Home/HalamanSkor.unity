@@ -1702,6 +1702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skorText: {fileID: 708112124}
   kategoriText: {fileID: 16921264}
+  waktuText: {fileID: 629647434}
 --- !u!1 &1359808874
 GameObject:
   m_ObjectHideFlags: 0
