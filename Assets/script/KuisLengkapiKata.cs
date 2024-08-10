@@ -136,7 +136,7 @@ public class KuisLengkapiKata : MonoBehaviour
     public void Selesai()
     {
         kuisBerjalan = false;
-        ManagerRiwayat.SimpanSkor("Kuis Lengkapi Kata", textWaktu.text);
+        ManagerRiwayat.SimpanSkor("Kuis Pilihan Ganda", textWaktu.text);
         SceneManager.LoadScene("HalamanSkorLengkapiKata");
     }
 }
