@@ -40,6 +40,7 @@ public class GeneratorSoal
         for (int i = 0; i < listIndexSoal.Count; i++)
         {
             xn = LCM(xn);
+            // Debug.Log(xn);
             int temp = listIndexSoal[i];
             listIndexSoal[i] = listIndexSoal[xn];
             listIndexSoal[xn] = temp;
