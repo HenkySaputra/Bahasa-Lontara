@@ -17,4 +17,9 @@ public class HalamanBermain : MonoBehaviour
         SceneManager.LoadScene("HalamanHome");
     }
 
+    public void TombolKembaliBermain(){
+        Skor.instance.ResetSkor();
+        SceneManager.LoadScene("HalamanBermain");
+    }
+
 }
